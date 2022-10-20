@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="nome" onkeyup="validaN()"> Nome
+        <input type="text" id="cognome" onkeyup="validaC()"> Cognome
+        <input type="submit" id="submit">
+        <select id="titolodistudio" onchange="controllotitolo()">
+            <option>Diploma</option>
+            <option>Laurea</option>
+        </select>
+        <input type="number" id="voto" min="60" max="100">
+    </form>
+
+    <style>
+        .ERROR{
+            outline: none !important;
+            border:2px solid red;
+            box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js">
+
+    </script>
+
+
+</body>
+</html>
